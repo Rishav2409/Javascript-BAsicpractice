@@ -1,0 +1,27 @@
+# 🎬 Movie Search App
+
+A beautifully styled, responsive Movie Search application built with HTML, CSS, and Vanilla JavaScript. 
+
+It uses the **OMDb API** to search for movies and display their posters, titles, and release years in a responsive grid layout.
+
+## ✨ Features
+* Clean, modern dark-themed UI.
+* Responsive grid layout for movie cards.
+* Hover animations and smooth transitions.
+* Real-time search functionality.
+* Graceful fallback to mock data if an API key isn't provided.
+* Handles missing movie posters automatically.
+
+## 🚀 How to Run
+1. Ensure all files (`index.html`, `style.css`, `script.js`, and this `README.md`) are in the same folder.
+2. Open `index.html` in any web browser (Chrome, Firefox, Safari, Edge, etc.). 
+3. No build tools or local servers are strictly required!
+
+## 🔑 Activating Real Search (OMDb API)
+By default, the app uses dummy data so you can see the layout immediately. To search the actual movie database of millions of films:
+
+1. Go to [http://www.omdbapi.com/](http://www.omdbapi.com/) and request a **Free API Key**.
+2. Open `script.js` in your favorite text editor.
+3. Replace the `YOUR_API_KEY` placeholder on line 3 with your actual API key:
+   ```javascript
+   const API_KEY = '1234abcd'; // Example of what it might look like
