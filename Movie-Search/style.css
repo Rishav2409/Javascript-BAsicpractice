@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #22254b;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    min-height: 100vh;
+}
+
+header {
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #373b69;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.search {
+    background-color: transparent;
+    border: 2px solid #22254b;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    color: #fff;
+    transition: all 0.3s ease;
+    width: 300px;
+}
+
+.search::placeholder {
+    color: #a0a3cc;
+}
+
+.search:focus {
+    outline: none;
+    border-color: #7378c5;
+    background-color: #22254b;
+    width: 350px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.movie {
+    width: 280px;
+    background-color: #373b69;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.movie img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.movie-info {
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.movie-info h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.movie-info .year {
+    background-color: #22254b;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.message-box {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(250, 204, 21, 0.1);
+    border: 1px solid #facc15;
+    color: #facc15;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .search {
+        width: 100%;
+    }
+    .search:focus {
+        width: 100%;
+    }
+}
