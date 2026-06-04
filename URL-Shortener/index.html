@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔗 URL Shortener</h1>
+            <p>Paste your long URL below to get a neat, shortened link.</p>
+        </header>
+        
+        <main>
+            <form id="shorten-form">
+                <div class="input-group">
+                    <input type="url" id="long-url" placeholder="Enter your long link here..." required>
+                    <button type="submit" id="submit-btn">Shorten</button>
+                </div>
+            </form>
+
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Shortening...</p>
+            </div>
+
+            <div id="result-container" class="hidden">
+                <p class="success-msg">Success! Here is your short link:</p>
+                <div class="result-box">
+                    <a href="#" id="short-url" target="_blank" rel="noopener noreferrer"></a>
+                    <button id="copy-btn">Copy</button>
+                </div>
+            </div>
+
+            <div id="error-container" class="hidden">
+                <p id="error-msg"></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
