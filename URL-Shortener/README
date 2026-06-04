@@ -1,0 +1,31 @@
+# 🔗 URL Shortener UI
+
+A clean, responsive frontend application for a URL Shortener. It takes long, unwieldy URLs and generates neat, shortened links using a completely free public API.
+
+## ✨ Features
+* **Modern UI:** Clean, minimalist design with smooth animations.
+* **Fully Responsive:** Looks great on desktops, tablets, and mobile devices.
+* **One-Click Copy:** Easily copy the generated short URL to your clipboard with visual feedback.
+* **Error Handling:** Gracefully handles invalid URLs and network errors.
+* **No API Key Required:** Uses the free `is.gd` public API to shorten links right out of the box without any registration or CORS issues.
+
+## 🚀 How to Run
+This is a standard vanilla web application with no build steps or dependencies required.
+
+1. Ensure all three files (`index.html`, `style.css`, and `script.js`) are in the same folder.
+2. Open `index.html` in your favorite web browser (Chrome, Firefox, Safari, Edge, etc.).
+3. Paste a valid long URL into the input field and click **Shorten**.
+
+## 🛠️ Built With
+* **HTML5:** Semantic page structure.
+* **CSS3:** Custom styling, Flexbox layout, and CSS keyframe animations.
+* **Vanilla JavaScript:** DOM manipulation, Clipboard API, and asynchronous `fetch` requests.
+* **is.gd API:** A reliable, free, and open URL shortening service.
+
+## 📂 File Structure
+\`\`\`text
+├── index.html   # The main HTML document
+├── style.css    # The stylesheet for the layout and UI
+├── script.js    # The application logic and API fetching
+└── README.md    # This documentation file
+\`\`\`
