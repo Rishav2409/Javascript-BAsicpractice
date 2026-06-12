@@ -1,0 +1,24 @@
+Problem Statement
+
+Given an array of words, count how many times each word appears using a higher-order function.
+
+const words = [
+  "apple",
+  "banana",
+  "apple",
+  "orange",
+  "banana",
+  "apple"
+];
+
+const frequency = words.reduce((acc, word) => {
+  acc[word] = (acc[word] || 0) + 1;
+  return acc;
+}, {});
+
+console.log(frequency);
+{
+  apple: 3,
+  banana: 2,
+  orange: 1
+}
