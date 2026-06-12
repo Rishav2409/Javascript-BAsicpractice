@@ -1,0 +1,32 @@
+2. Online Shopping Cart
+Problem Statement
+
+Given a shopping cart, use higher-order functions to:
+
+Calculate the total bill.
+Find products costing more than ₹500.
+Apply a 10% discount to all products.
+const cart = [
+  { item: "Headphones", price: 1200 },
+  { item: "Notebook", price: 100 },
+  { item: "Mouse", price: 700 },
+  { item: "Pen", price: 50 }
+];
+
+const totalBill = cart.reduce(
+  (total, product) => total + product.price,
+  0
+);
+
+const expensiveProducts = cart.filter(
+  product => product.price > 500
+);
+
+const discountedProducts = cart.map(product => ({
+  ...product,
+  price: product.price * 0.9
+}));
+
+console.log("Total Bill:", totalBill);
+console.log("Expensive Products:", expensiveProducts);
+console.log("After Discount:", discountedProducts);
