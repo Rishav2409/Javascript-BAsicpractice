@@ -1,0 +1,32 @@
+Problem Statement
+
+An organization wants to:
+
+Increase every employee's salary by 15%.
+Find employees earning above ₹60,000 after the increment.
+Calculate the total salary expenditure.
+
+
+const employees = [
+  { name: "John", salary: 50000 },
+  { name: "Emma", salary: 70000 },
+  { name: "Alex", salary: 55000 },
+  { name: "Sophia", salary: 80000 }
+];
+const updatedEmployees = employees.map(employee => ({
+  ...employee,
+  salary: employee.salary * 1.15
+}));
+
+const highEarners = updatedEmployees.filter(
+  employee => employee.salary > 60000
+);
+
+const totalExpense = updatedEmployees.reduce(
+  (sum, employee) => sum + employee.salary,
+  0
+);
+
+console.log(updatedEmployees);
+console.log(highEarners);
+console.log("Total Expense:", totalExpense);
