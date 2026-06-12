@@ -1,0 +1,25 @@
+Problem Statement
+
+Create a higher-order function called repeatTask that accepts:
+
+another function, and
+the number of times it should execute.
+
+Use it to print a motivational message 5 times.
+
+function repeatTask(task, times) {
+  for (let i = 1; i <= times; i++) {
+    task();
+  }
+}
+
+function motivate() {
+  console.log("Keep learning JavaScript!");
+}
+
+repeatTask(motivate, 5);
+Keep learning JavaScript!
+Keep learning JavaScript!
+Keep learning JavaScript!
+Keep learning JavaScript!
+Keep learning JavaScript!
